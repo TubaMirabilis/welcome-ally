@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from "next/head";
+import Image from "next/image";
 export default function Home() {
   return (
     <>
@@ -8,11 +9,533 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>Welcome Ally</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe tempore possimus nemo accusamus dolore culpa.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe tempore possimus nemo accusamus dolore culpa.</p>
+      <main className="d-flex flex-column flex-lg-row-reverse gap-5">
+        <section style={{ minWidth: "320px" }} className="text-center">
+          <hr />
+          <img
+            className="d-block mx-auto"
+            style={{ width: "200px" }}
+            alt="Spotify"
+            src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg"
+          />
+          <hr />
+          <table className="table">
+            <tbody>
+              <tr>
+                <th scope="row">Structure & Layout</th>
+                <td className="fs-3">
+                  5
+                  <div className="d-inline-block ms-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Responsiveness</th>
+                <td className="fs-3">
+                  5
+                  <div className="d-inline-block ms-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Forms & Controls</th>
+                <td className="fs-3">
+                  5
+                  <div className="d-inline-block ms-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Labels</th>
+                <td className="fs-3">
+                  4
+                  <div className="d-inline-block ms-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Image Descriptions</th>
+                <td className="fs-3">
+                  5
+                  <div className="d-inline-block ms-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Legibility</th>
+                <td className="fs-3">
+                  5
+                  <div className="d-inline-block ms-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Colours & Contrast</th>
+                <td className="fs-3">
+                  4
+                  <div className="d-inline-block ms-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Useful Features</th>
+                <td className="fs-3">
+                  5
+                  <div className="d-inline-block ms-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">User Rating</th>
+                <td className="fs-3">4
+                <div className="d-inline-block ms-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                  </div>
+                  </td>
+              </tr>
+              <tr>
+                <th scope="row">Final Score</th>
+                <td className="fs-3">4.75</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h1 className="mb-4">Spotify</h1>
+          <div className="float-start me-3 mb-1">
+            <Image
+              src="/gold.png"
+              alt="Welcome Ally Gold Award"
+              width={250}
+              height={250}
+            />
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit architecto tempore repudiandae, illum blanditiis ea ducimus delectus aliquam aliquid impedit nulla eveniet quasi nisi quisquam perferendis? Dicta beatae saepe eveniet laborum, illo rerum perspiciatis vel sapiente architecto a tenetur quisquam placeat mollitia veniam inventore debitis ducimus quis, est officia repellat?</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit architecto tempore repudiandae, illum blanditiis ea ducimus delectus aliquam aliquid impedit nulla eveniet quasi nisi quisquam perferendis? Dicta beatae saepe eveniet laborum, illo rerum perspiciatis vel sapiente architecto a tenetur quisquam placeat mollitia veniam inventore debitis ducimus quis, est officia repellat?</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit architecto tempore repudiandae, illum blanditiis ea ducimus delectus aliquam aliquid impedit nulla eveniet quasi nisi quisquam perferendis? Dicta beatae saepe eveniet laborum, illo rerum perspiciatis vel sapiente architecto a tenetur quisquam placeat mollitia veniam inventore debitis ducimus quis, est officia repellat?</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit architecto tempore repudiandae, illum blanditiis ea ducimus delectus aliquam aliquid impedit nulla eveniet quasi nisi quisquam perferendis? Dicta beatae saepe eveniet laborum, illo rerum perspiciatis vel sapiente architecto a tenetur quisquam placeat mollitia veniam inventore debitis ducimus quis, est officia repellat?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique inventore impedit sint eius expedita id laudantium reiciendis ullam ipsam a porro culpa eos animi aspernatur, natus, eveniet quas maxime dicta nam pariatur accusantium. Facilis at eligendi, totam ad repellat magni eaque dolores, odio, accusamus debitis dolorem praesentium incidunt ipsam officiis maxime deserunt qui architecto explicabo quisquam! Aliquid quae vitae quidem? Unde culpa itaque earum. Numquam ad vero, possimus commodi sequi, aperiam voluptates vitae minima nemo ut ipsam ab sit magni blanditiis mollitia in id ex perferendis. Iste fugit laboriosam beatae incidunt iure quam quibusdam, non dolores ipsum accusamus, dolore asperiores sed nisi aut odio sint labore reiciendis. Inventore ipsam numquam culpa corporis ea commodi voluptatum, illo nobis quod tenetur ratione accusamus at sed placeat dolor dicta. Aspernatur consectetur praesentium ducimus eius similique perferendis voluptas reprehenderit asperiores dicta, saepe totam dolores a inventore nihil, explicabo tenetur atque tempora voluptate hic illo nesciunt sed. Dolorem eum voluptate temporibus illo id quae omnis eveniet accusantium aliquam nesciunt laudantium asperiores modi quas fugiat cupiditate distinctio minus, soluta consequuntur sint dolores inventore, rem laboriosam corrupti. Cum voluptatibus aut atque cupiditate nihil dignissimos earum iure magni excepturi quis? Ipsa fugit eveniet aut perferendis libero dolor reprehenderit dolore quisquam velit cupiditate, sunt quod laboriosam magni similique, quaerat autem pariatur nulla qui vitae ipsum tempora. Voluptatibus, sequi enim repudiandae culpa impedit delectus non aperiam odit alias nulla laboriosam earum optio atque nesciunt dolor perferendis beatae nisi quos aliquid libero cumque. Quam necessitatibus cupiditate reiciendis nostrum voluptas eveniet impedit deserunt reprehenderit quae delectus sunt animi, iste ipsa fugiat aut et ratione corporis magni excepturi temporibus amet. Deserunt, illum sequi. Distinctio culpa quam laudantium earum nobis neque eius at veritatis, qui dolor nisi alias ipsum excepturi, autem, exercitationem accusamus dolorum quod eligendi eveniet fugit molestiae vitae maxime numquam! Nemo fuga provident rerum minus ut laudantium magnam repellat soluta alias, quaerat facere, eaque accusantium ipsam earum aspernatur similique ex, atque exercitationem inventore doloremque nihil blanditiis aliquam? Nam numquam minus est eos quae cumque itaque reprehenderit quos odio sunt suscipit ipsam fugiat soluta porro optio explicabo non quo quisquam sit quam, autem voluptas recusandae. Atque, neque laboriosam vitae perspiciatis accusamus nisi tempora illum! Aliquid rem, labore aspernatur quasi quam porro vero et accusantium doloribus, alias unde aperiam maxime, facilis perspiciatis molestias cumque quidem eligendi atque. Quibusdam recusandae odit perspiciatis labore minima molestias dolor sequi nihil quae voluptatibus architecto provident modi error quo ipsum voluptatum esse rerum beatae omnis, aut suscipit doloremque dolorem fuga iste. Perspiciatis libero accusamus natus voluptates voluptatibus excepturi minus repudiandae impedit nihil obcaecati cum odit, blanditiis laborum, et ratione quasi vitae eligendi laudantium soluta facere iusto. Ad quod modi ipsum suscipit corporis numquam ullam in sit eveniet placeat laudantium minima provident at sunt illum fugiat temporibus, totam incidunt aliquid sequi ipsam! Delectus numquam, accusamus quos impedit maiores recusandae reprehenderit placeat? Ad illum, culpa ex amet consectetur, eius sed repudiandae magni autem, qui aut. Praesentium iure dolorum quos autem fugit cumque incidunt, aperiam asperiores quam iste facere esse, nemo harum explicabo ea! Perspiciatis at temporibus tempora expedita vero esse optio fuga obcaecati dolor neque, molestiae molestias. Id, enim deleniti. Aspernatur, alias commodi. Earum possimus odit at totam non reprehenderit corrupti, praesentium eos tenetur nihil voluptas similique beatae obcaecati tempora ipsa nemo! Ut harum nulla illo cumque necessitatibus unde vero enim ducimus minima, doloribus, totam veritatis minus illum repellendus excepturi maiores nihil eos voluptatum sint culpa perspiciatis facilis magni odio. Est beatae illo, quis repellat, excepturi minus tempore, incidunt velit rem aliquam maxime ea cum exercitationem dignissimos mollitia quod et. Obcaecati, adipisci perferendis! Explicabo doloribus neque incidunt nihil! Maxime omnis modi, maiores cumque facere rem asperiores non quisquam optio illum incidunt voluptatibus similique magni repellat. Temporibus doloribus soluta repellat? Nulla dignissimos temporibus amet excepturi illum sed incidunt quaerat iste nihil labore totam possimus et eum animi dolores blanditiis eligendi voluptate deserunt, adipisci minus. Mollitia iusto accusamus maxime porro adipisci, inventore et voluptates error facere voluptatibus cum harum, recusandae ullam! Placeat qui, optio eos assumenda magni pariatur ipsa, doloribus alias quis eveniet non mollitia corporis quia fuga necessitatibus exercitationem tempora reprehenderit! Similique porro voluptas asperiores dolor perspiciatis commodi nulla veritatis, error suscipit excepturi doloremque ad temporibus, dignissimos distinctio expedita, aut molestiae est blanditiis dolore esse. Laudantium nisi quam ullam molestias illum! Possimus amet ut molestiae sint, iure hic. Recusandae vero distinctio suscipit architecto, maiores tempore nihil quidem nobis unde excepturi quaerat, illo minima reiciendis omnis officiis illum, ab sed dolores cumque aspernatur. Minima numquam obcaecati aut, itaque sapiente fugit officiis nam facilis architecto expedita, impedit eum voluptate, possimus soluta eos facere optio illum aspernatur accusantium. Nemo nesciunt facilis laboriosam ipsum? Molestias fugit similique, ex laborum obcaecati enim atque accusamus reiciendis quo eius iure temporibus cum assumenda libero quaerat unde explicabo cupiditate exercitationem, aliquam officia quibusdam ducimus ullam id? Eos placeat officiis quos enim consequatur. Fuga odio quo ab molestiae magnam ipsa, omnis ducimus quod autem provident tempora vel qui, aperiam nihil odit cupiditate accusantium distinctio officia dolore itaque atque aliquam. Esse inventore ipsum rem nihil impedit vitae laborum eos, amet excepturi autem commodi labore ducimus et provident temporibus nostrum? Cum asperiores suscipit eligendi doloremque blanditiis, soluta, officia veniam magni sunt ad nesciunt? Placeat doloremque ea tempora temporibus commodi! Ut, sequi aperiam, iure, corporis quaerat excepturi sapiente quas a cumque vel officiis voluptate recusandae. Dolor non quam, ratione dicta asperiores veniam fugiat, iste possimus culpa porro vero ipsum cupiditate quasi illo consequuntur sunt ea soluta debitis ullam dolorum error explicabo id! Nulla error nobis culpa molestiae! Odit beatae quas consequatur voluptatum totam aut suscipit error perferendis quasi, soluta, sint tempora dignissimos molestiae expedita. Expedita vero aliquam molestias, inventore vel in doloribus! Accusamus ut voluptate at. Minima, fugiat iusto, eum accusantium hic minus earum neque quasi eveniet nulla dolorem natus dolor et excepturi delectus expedita modi commodi consectetur vero at suscipit ipsam! At asperiores architecto aperiam aspernatur labore facere aliquid quaerat aut dolorem suscipit libero sint laboriosam explicabo veniam exercitationem numquam blanditiis repellat nostrum, obcaecati eaque eos? Dolor tempore fugit mollitia eaque corrupti incidunt?</p>
+        </section>
       </main>
     </>
-  )
+  );
 }
