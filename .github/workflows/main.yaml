@@ -6,6 +6,7 @@ on:
       - main
     jobs:
       deploy:
+        name: Deploy welcome-ally
         runs-on: ubuntu-latest
         steps:
           - name: Connect to server with ssh
