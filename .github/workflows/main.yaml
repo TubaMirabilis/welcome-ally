@@ -1,7 +1,7 @@
 name: welcome-ally deploy to Linode
   on:
     push:
-      branches: [ master ]
+      branches: [ main ]
       jobs:
         deploy:
           runs-on: ubuntu-latest
