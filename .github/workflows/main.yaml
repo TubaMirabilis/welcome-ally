@@ -26,7 +26,7 @@ jobs:
           SSH_KEY: ${{ secrets.SSH_KEY }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
       - name: Remove existing website
-        run: ssh deploy 'sudo rm -r welcome-ally'
+        run: ssh deploy 'rm -r welcome-ally'
       - name: Clone new website
         run: ssh deploy 'git clone https://github.com/TubaMirabilis/welcome-ally welcome-ally'
       - name: Install dependencies
