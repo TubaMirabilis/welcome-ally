@@ -1,4 +1,5 @@
 name: welcome-ally deploy to Linode
+
 on: [push]
   branches:
     - main
