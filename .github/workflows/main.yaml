@@ -4,34 +4,34 @@ on:
   push:
     branches:
       - main
-    jobs:
-      deploy:
-        name: Deploy welcome-ally
-        runs-on: ubuntu-latest
-        steps:
-          - name: Connect to server with ssh
-            run: |
-              mkdir -p ~/.ssh/
-              echo "$SSH_KEY" > ~/.ssh/deploy.key
-              chmod 600 ~/.ssh/deploy.key
-              cat >>~/.ssh/config <<END
-              Host deploy
-                HostName $SSH_HOST
-                User $SSH_USER
-                IdentityFile ~/.ssh/deploy.key
-                StrictHostKeyChecking no
-              END
-            env:
-              SSH_USER: ${{ secrets.STAGING_SSH_USER }}
-              SSH_KEY: ${{ secrets.STAGING_SSH_KEY }}
-              SSH_HOST: ${{ secrets.STAGING_SSH_HOST }}
-          - name: Remove existing website
-            run: ssh deploy 'rm -r welcome-ally'
-          - name: Clone new website
-            run: ssh deploy 'git clone https://github.com/TubaMirabilis/welcome-ally welcome-ally'
-          - name: Install dependencies
-            run: ssh deploy 'npm install --prefix ./welcome-ally'
-          - name: Run the build script
-            run: ssh deploy 'npm run build --prefix ./welcome-ally'
-          - name: Restart the PM2 process
-            run: ssh deploy 'pm2 restart welcome-ally'
+jobs:
+  deploy:
+    name: Deploy welcome-ally
+    runs-on: ubuntu-latest
+    steps:
+      - name: Connect to server with ssh
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/deploy.key
+          chmod 600 ~/.ssh/deploy.key
+          cat >>~/.ssh/config <<END
+          Host deploy
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/deploy.key
+            StrictHostKeyChecking no
+          END
+        env:
+          SSH_USER: ${{ secrets.STAGING_SSH_USER }}
+          SSH_KEY: ${{ secrets.STAGING_SSH_KEY }}
+          SSH_HOST: ${{ secrets.STAGING_SSH_HOST }}
+      - name: Remove existing website
+        run: ssh deploy 'rm -r welcome-ally'
+      - name: Clone new website
+        run: ssh deploy 'git clone https://github.com/TubaMirabilis/welcome-ally welcome-ally'
+      - name: Install dependencies
+        run: ssh deploy 'npm install --prefix ./welcome-ally'
+      - name: Run the build script
+        run: ssh deploy 'npm run build --prefix ./welcome-ally'
+      - name: Restart the PM2 process
+        run: ssh deploy 'pm2 restart welcome-ally'
