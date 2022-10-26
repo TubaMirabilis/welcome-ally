@@ -1,9 +1,7 @@
 name: welcome-ally deploy to Linode
 
 on:
-  push:
-    branches:
-      - main
+  - workflow_dispatch
 jobs:
   deploy:
     name: Deploy welcome-ally

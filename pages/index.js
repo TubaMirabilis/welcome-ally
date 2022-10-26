@@ -180,7 +180,7 @@ export default function Home() {
             mollitia veniam inventore debitis ducimus quis, est officia
             repellat?
           </p>
-          <p className="text-success">
+          <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
             architecto tempore repudiandae, illum blanditiis ea ducimus delectus
             aliquam aliquid impedit nulla eveniet quasi nisi quisquam
