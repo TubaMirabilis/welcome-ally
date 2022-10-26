@@ -146,20 +146,12 @@ export default function Home() {
         </section>
         <section className="mb-5">
           <h1 className="mb-4">Spotify</h1>
-          <div className="d-block d-md-none float-start me-3 mb-1">
+          <div className="position-relative float-start me-3 mb-1 award">
             <Image
               src="/gold.png"
               alt="Welcome Ally Gold Award"
-              width={150}
-              height={150}
-            />
-          </div>
-          <div className="d-none d-md-block float-start me-3 mb-1">
-            <Image
-              src="/gold.png"
-              alt="Welcome Ally Gold Award"
-              width={250}
-              height={250}
+              layout={'fill'}
+              objectFit={'contain'}
             />
           </div>
           <p>
