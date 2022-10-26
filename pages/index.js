@@ -12,14 +12,23 @@ export default function Home() {
       </Head>
 
       <main>
-        <section style={{ minWidth: "320px" }} className="float-lg-end ms-lg-5 text-center">
+        <section
+          style={{ minWidth: "320px" }}
+          className="float-lg-end ms-lg-5 text-center"
+        >
           <hr />
-          <img
-            className="d-block mx-auto"
-            style={{ width: "200px" }}
-            alt="Spotify"
-            src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg"
-          />
+          <div
+            className="d-block position-relative mx-auto"
+            style={{ width: "200px", height: "60px" }}
+          >
+            <Image
+              src="./Spotify.svg"
+              fill
+              alt="Spotify"
+              layout={"fill"}
+              objectFit={"contain"}
+            />
+          </div>
           <hr />
           <table className="table">
             <tbody>
@@ -149,9 +158,11 @@ export default function Home() {
           <div className="position-relative float-start me-3 mb-1 award">
             <Image
               src="/gold.png"
+              fill
               alt="Welcome Ally Gold Award"
-              layout={'fill'}
-              objectFit={'contain'}
+              layout={"fill"}
+              objectFit={"contain"}
+              sizes="(max-width: 768px) 150px, 250px)"
             />
           </div>
           <p>

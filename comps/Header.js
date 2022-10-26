@@ -4,8 +4,8 @@ const Header = () => {
   return (
     <header className="mb-5">
       <nav className="navbar navbar-expand-lg">
-        <a className="navbar-brand" href="#">
-          <Image alt="Welcome Ally" src="/logo.png" width={258} height={144} />
+        <a className="position-relative navbar-brand" href="#">
+          <Image src="/logo.png" fill alt="Welcome Ally" layout={'fill'} objectFit={'contain'}/>
         </a>
         <button
           className="navbar-toggler"
