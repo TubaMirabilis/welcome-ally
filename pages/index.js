@@ -165,7 +165,7 @@ export default function Home() {
               sizes="(max-width: 768px) 150px, 250px)"
             />
           </div>
-          <p className="text-success">
+          <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
             architecto tempore repudiandae, illum blanditiis ea ducimus delectus
             aliquam aliquid impedit nulla eveniet quasi nisi quisquam
