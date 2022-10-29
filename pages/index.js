@@ -22,7 +22,7 @@ export default function Home() {
             style={{ width: "200px", height: "60px" }}
           >
             <Image
-              src="./Spotify.svg"
+              src="/Spotify.svg"
               fill
               alt="Spotify"
               layout={"fill"}
@@ -165,7 +165,7 @@ export default function Home() {
               sizes="(max-width: 768px) 150px, 250px)"
             />
           </div>
-          <p>
+          <p className="text-success">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
             architecto tempore repudiandae, illum blanditiis ea ducimus delectus
             aliquam aliquid impedit nulla eveniet quasi nisi quisquam
