@@ -158,7 +158,6 @@ export default function Home() {
           <div className="position-relative float-start me-3 mb-1 award">
             <Image
               src="/gold.png"
-              fill
               alt="Welcome Ally Gold Award"
               layout={"fill"}
               objectFit={"contain"}
