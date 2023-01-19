@@ -24,12 +24,12 @@ jobs:
           SSH_KEY: ${{ secrets.SSH_KEY }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
       - name: Remove existing website
-        run: ssh deploy 'rm -r welcome-ally'
+        run: ssh deploy 'rm -r /srv/www/welcome-ally'
       - name: Clone new website
-        run: ssh deploy 'git clone https://github.com/TubaMirabilis/welcome-ally welcome-ally'
+        run: ssh deploy 'git clone https://github.com/TubaMirabilis/welcome-ally /srv/www/welcome-ally'
       - name: Install dependencies
-        run: ssh deploy 'npm install --prefix ./welcome-ally'
+        run: ssh deploy 'npm install --prefix /srv/www/welcome-ally'
       - name: Run the build script
-        run: ssh deploy 'npm run build --prefix ./welcome-ally'
+        run: ssh deploy 'npm run build --prefix /srv/www/welcome-ally'
       - name: Restart the PM2 process
         run: ssh deploy 'pm2 restart welcome-ally'
